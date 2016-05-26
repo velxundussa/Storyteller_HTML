@@ -1,0 +1,26 @@
+table {
+    width:500px;
+}
+
+.Stat {
+    float: right;
+    padding-right: 15px;
+}
+
+.health {
+    float: right;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-size: 75%;
+}
+
+h1 {
+    margin: 3px
+}
