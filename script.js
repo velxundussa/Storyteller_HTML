@@ -12,9 +12,13 @@ $(document).ready(function() {
 
         var maxValue = $(this).text().length;
         var maxX = $(this).width();
+        var targetValue = Math.ceil((relX/maxX)*maxValue);
 
-        // alert(relX + " / " + maxX + " * " + maxValue);
-        $(this).html(Math.ceil((relX/maxX)*maxValue));
+        if(($(this).text().charAt(0) != $(this).text().charAt(1)) && (targetValue == 1)) {
+            targetValue = 0
+        };
+
+        $(this).html(targetValue);
 
         numToChar();
     });
