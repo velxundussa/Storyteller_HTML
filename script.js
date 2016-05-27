@@ -1,6 +1,6 @@
-$(document).ready(function() {
+ $(document).ready(function() {
 
-    numToChar()
+    numToChar();
     // downloadCharacter(document.documentElement.innerHTML, $(document).find("title").text()+".html");
 
     $(document.body).on("click",".editable",function(e) {
@@ -21,8 +21,8 @@ $(document).ready(function() {
         var targetValue = Math.ceil((relX/maxX)*maxValue);
 
         if(($(this).text().charAt(0) != $(this).text().charAt(1)) && (targetValue == 1)) {
-            targetValue = 0
-        };
+            targetValue = 0;
+        }
 
         $(this).html(targetValue);
 
@@ -64,19 +64,19 @@ $(document).ready(function() {
 
         if (value > maxValue) {
             value = maxValue;
-        };
+        }
 
         if($.isNumeric(value)) {
-            obj.innerHTML = ""
+            obj.innerHTML = "";
 
             for (j=0 ; j<value ; j++) {
-                obj.innerHTML += "●"
+                obj.innerHTML += "●";
             }
 
             for (j=0 ; j< maxValue - value ; j++) {
-                obj.innerHTML += "○"
+                obj.innerHTML += "○";
             }
-        };
+        }
     }
 
     function numToSquare(obj, maxvalue) {
@@ -85,14 +85,14 @@ $(document).ready(function() {
         value = obj.innerHTML;
 
         if($.isNumeric(value)) {
-            obj.innerHTML = ""
+            obj.innerHTML = "";
 
             for (j=0 ; j<value ; j++) {
-                obj.innerHTML += "■"
+                obj.innerHTML += "■";
             }
 
             for (j=0 ; j< maxvalue - value ; j++) {
-                obj.innerHTML += "□"
+                obj.innerHTML += "□";
             }
         }
     }
