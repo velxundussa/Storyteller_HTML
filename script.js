@@ -3,7 +3,13 @@ $(document).ready(function() {
     numToChar()
     // downloadCharacter(document.documentElement.innerHTML, $(document).find("title").text()+".html");
 
+    $(document.body).on("click",".editable",function(e) {
+        $(this).replaceWith("<input type='text' value='" + $(this).text() + "'>");
+    });
 
+    $(document.body).on("focusout","input",function(e) {
+        $(this).replaceWith("<span class='editable'>" + $(this).val() + "</span>");
+    });
 
     $(".Stat, .Stat10, .Square10").click(function(e){
         // var parentOffset = $(this).parent().offset();
