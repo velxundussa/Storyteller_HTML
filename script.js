@@ -12,11 +12,11 @@
      });
 
      $(document.body).on("click", ".miscData", function(e) {
-         $(this).replaceWith("<textarea class='dataEntry' rows='50' cols='60'>" + $(this).text() + "</textarea>");
+         $(this).replaceWith("<textarea class='dataEntry' rows='50' cols='90'>" + $(this).text() + "</textarea>");
      });
 
      $(document.body).on("focusout", ".dataEntry", function(e) {
-         $(this).replaceWith("<p class='miscData'>" + $(this).val() + "</p>");
+         $(this).replaceWith("<pre class='miscData'>" + $(this).val() + "</pre>");
      });
 
      $(".Stat, .Stat10, .Square10").click(function(e) {
