@@ -1,14 +1,28 @@
  $(document).ready(function() {
 
      numToChar();
-     // downloadCharacter(document.documentElement.innerHTML, $(document).find("title").text()+".html");
+     $("#downloadChar").click(function(e) {
+         downloadCharacter(document.documentElement.innerHTML, $("#charName").text() + ".html");
+     });
 
      $(document.body).on("click", ".editable", function(e) {
-         $(this).replaceWith("<input type='text' value='" + $(this).text() + "'>");
+
+         var id = "";
+         if ($(this).attr('id') != "") {
+             id = "id='" + $(this).attr('id') + "'";
+         };
+
+         $(this).replaceWith("<input type='text' value='" + $(this).text() + "'" + id +">");
      });
 
      $(document.body).on("focusout", "input", function(e) {
-         $(this).replaceWith("<span class='editable'>" + $(this).val() + "</span>");
+
+         var id = "";
+         if ($(this).attr('id') != "") {
+             id = "id='" + $(this).attr('id') + "'";
+         };
+
+         $(this).replaceWith("<span class='editable'" + id +">" + $(this).val() + "</span>");
      });
 
      $(document.body).on("click", ".miscData", function(e) {
