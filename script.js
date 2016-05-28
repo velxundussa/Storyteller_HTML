@@ -11,6 +11,14 @@
          $(this).replaceWith("<span class='editable'>" + $(this).val() + "</span>");
      });
 
+     $(document.body).on("click", ".miscData", function(e) {
+         $(this).replaceWith("<textarea class='dataEntry' rows='50' cols='60'>" + $(this).text() + "</textarea>");
+     });
+
+     $(document.body).on("focusout", ".dataEntry", function(e) {
+         $(this).replaceWith("<p class='miscData'>" + $(this).val() + "</p>");
+     });
+
      $(".Stat, .Stat10, .Square10").click(function(e) {
          // var parentOffset = $(this).parent().offset();
          //or $(this).offset(); if you really just want the current element's offset
@@ -111,3 +119,6 @@
      }
 
  });
+
+//  LocalWords:  downloadCharacter documentElement parentOffset href charset
+//  LocalWords:  utf LocalWords html
