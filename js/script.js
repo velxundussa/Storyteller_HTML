@@ -36,7 +36,7 @@
          $(this).replaceWith("<pre class='miscData'>" + $(this).val() + "</pre>");
      });
 
-     $(".Stat, .Stat10, .Square10").click(function(e) {
+     $(".Stat, .Stat10, .Square10, .Square").click(function(e) {
          var relX = e.pageX - $(this).offset().left;
 
          var maxValue = $(this).text().length;
@@ -71,6 +71,10 @@
 
          $('.Stat10').each(function(i, obj) {
              numToDot(obj, 10);
+         });
+
+         $('.Square').each(function(i, obj) {
+             numToSquare(obj, 5);
          });
 
          $('.Square10').each(function(i, obj) {

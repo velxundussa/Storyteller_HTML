@@ -1,4 +1,4 @@
-table {width: 500px; float: left;}
+table.mainTable {width: 500px; float: left;}
 
 .Stat {float: right; padding-right: 15px;}
 
@@ -13,4 +13,13 @@ h1 {margin: 3px}
 .miscData {
     padding-left: 520px;
     width: 500px;
+}
+
+h4 {
+    margin: 0px;
+}
+
+.Virtue {
+    float: none;
+    padding: 0px;
 }
