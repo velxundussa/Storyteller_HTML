@@ -1,6 +1,9 @@
  $(document).ready(function() {
 
+
      numToChar();
+
+
      $("#downloadChar").click(function(e) {
          downloadCharacter(document.documentElement.innerHTML, $("#charName").text() + ".html");
      });
@@ -34,8 +37,6 @@
      });
 
      $(".Stat, .Stat10, .Square10").click(function(e) {
-         // var parentOffset = $(this).parent().offset();
-         //or $(this).offset(); if you really just want the current element's offset
          var relX = e.pageX - $(this).offset().left;
 
          var maxValue = $(this).text().length;
