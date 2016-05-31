@@ -13,6 +13,7 @@
 
     <script src="js/jquery-2.2.4.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/solar.js"></script>
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -150,7 +151,7 @@
                 <span class="editable">__________</span>
             </td>
             <td valign="top" align="center">
-                <span class="Stat10">1</span><br>
+                <span class="Stat10" id="willpower">1</span><br>
                 <span class="Square10">0</span><br>
                 <h4>Soak</h4><br> B:
                 <span class="editable">____</span> L:<span class="editable">____</span> A:<span class="editable">____</span><br>
@@ -160,11 +161,11 @@
                         <td>
                             <ul>
                                 <li>Compassion<br>
-                                    <span class="Stat Virtue">1</span><br>
+                                    <span class="Stat Virtue virtueTotal">1</span><br>
                                     <span class="Square Virtue">0</span>
                                 </li>
                                 <li>Temperance<br>
-                                    <span class="Stat Virtue">1</span><br>
+                                    <span class="Stat Virtue virtueTotal">1</span><br>
                                     <span class="Square Virtue">0</span>
                                 </li>
                             </ul>
@@ -172,11 +173,11 @@
                         <td>
                             <ul>
                                 <li>Conviction<br>
-                                    <span class="Stat Virtue">1</span><br>
+                                    <span class="Stat Virtue virtueTotal">1</span><br>
                                     <span class="Square Virtue">0</span>
                                 </li>
                                 <li>Valor<br>
-                                    <span class="Stat Virtue">1</span><br>
+                                    <span class="Stat Virtue virtueTotal">1</span><br>
                                     <span class="Square Virtue">0</span>
                                 </li>
                             </ul>
@@ -196,9 +197,9 @@
                 </ul>
                 <h4>Essence</h4>
                 <ul>
-                    <li><span class="Stat Virtue">1</span></li>
-                    <li>Personal <span class="editable">___</span> | <span class="editable">___</span></li>
-                    <li>Peripheral <span class="editable">___</span> | <span class="editable">___</span></li>
+                    <li><span class="Stat Essence" id="essence">1</span></li>
+                    <li>Personal <span class="editable">___</span> | <span  id="personalTotal">___</span></li>
+                    <li>Peripheral <span class="editable">___</span> | <span  id="peripheralTotal">___</span></li>
                     <li>Commited <span class="editable">___</span></li>
                 </ul>
             </td>

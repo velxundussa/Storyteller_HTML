@@ -94,6 +94,7 @@
          }
 
          if ($.isNumeric(value)) {
+             $(obj).attr("numValue",value);
              obj.innerHTML = "";
 
              for (j = 0; j < value; j++) {
@@ -112,6 +113,7 @@
          value = obj.innerHTML;
 
          if ($.isNumeric(value)) {
+             $(obj).attr("numValue",value);
              obj.innerHTML = "";
 
              for (j = 0; j < value; j++) {
