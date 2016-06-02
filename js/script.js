@@ -15,7 +15,7 @@
              id = "id='" + $(this).attr('id') + "'";
          };
 
-         $(this).replaceWith("<input type='text' value='" + $(this).text() + "'" + id +">");
+         $(this).replaceWith("<input type='text' value='" + $(this).text() + "'" + id + ">");
      });
 
      $(document.body).on("focusout", "input", function(e) {
@@ -25,7 +25,7 @@
              id = "id='" + $(this).attr('id') + "'";
          };
 
-         $(this).replaceWith("<span class='editable'" + id +">" + $(this).val() + "</span>");
+         $(this).replaceWith("<span class='editable'" + id + ">" + $(this).val() + "</span>");
      });
 
      $(document.body).on("click", ".miscData", function(e) {
@@ -51,6 +51,17 @@
 
          numToChar();
      });
+
+     $(".Favorite").click(function(e) {
+         // ■ □
+
+         if ($(this).text() == "■") {
+             $(this).text("□");
+         } else {
+             $(this).text("■");
+         }
+     });
+
 
      $('.health').click(function(e) {
          if ($(this).text() == "□") {
@@ -81,6 +92,10 @@
              numToSquare(obj, 10);
          });
 
+         $('.Favorite').each(function(i, obj) {
+             numToSquare(obj, 1);
+         });
+
          $('.health').each(function(i, obj) {
              numToSquare(obj, 1);
          });
@@ -94,7 +109,7 @@
          }
 
          if ($.isNumeric(value)) {
-             $(obj).attr("numValue",value);
+             $(obj).attr("numValue", value);
              obj.innerHTML = "";
 
              for (j = 0; j < value; j++) {
@@ -113,7 +128,7 @@
          value = obj.innerHTML;
 
          if ($.isNumeric(value)) {
-             $(obj).attr("numValue",value);
+             $(obj).attr("numValue", value);
              obj.innerHTML = "";
 
              for (j = 0; j < value; j++) {
@@ -141,5 +156,5 @@
 
  });
 
-//  LocalWords:  downloadCharacter documentElement parentOffset href charset
-//  LocalWords:  utf LocalWords html
+ //  LocalWords:  downloadCharacter documentElement parentOffset href charset
+ //  LocalWords:  utf LocalWords html
