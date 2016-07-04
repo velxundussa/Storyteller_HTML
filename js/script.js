@@ -75,6 +75,9 @@
          }
      });
 
+     /**
+      * Scans the document and calls proper transformation functions with appropriate max values for each
+      */
      function numToChar() {
          $('.Stat').each(function(i, obj) {
              numToDot(obj, 5);
@@ -101,6 +104,11 @@
          });
      }
 
+     /**
+      * Transform HTML tag to Dot notation
+      * @param {} obj - HTML tag to transform
+      * @param {} maxValue
+      */
      function numToDot(obj, maxValue) {
          value = obj.innerHTML;
 
@@ -122,6 +130,11 @@
          }
      }
 
+     /**
+      * Transform HTML tag to square notation
+      * @param {} obj - the HTML tag to transform
+      * @param {} maxvalue - The maximum value of the stat
+      */
      function numToSquare(obj, maxvalue) {
          // ■ □
 
@@ -141,6 +154,11 @@
          }
      }
 
+     /**
+      * Downloads the character sheet to an external HTML
+      * @param {} pageHTML - The data to download
+      * @param {} filename - The Name of the output file
+      */
      function downloadCharacter(pageHTML, filename) {
          var element = document.createElement('a');
          element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(pageHTML));
