@@ -26,6 +26,10 @@
          };
 
          $(this).replaceWith("<span class='editable'" + id + ">" + $(this).val() + "</span>");
+
+         if ($(this).attr('id') == "charName") {
+             $("title").text($(this).val());
+         }
      });
 
      $(document.body).on("click", ".miscData", function(e) {
