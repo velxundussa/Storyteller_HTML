@@ -40,7 +40,7 @@
          $(this).replaceWith("<pre class='miscData'>" + $(this).val() + "</pre>");
      });
 
-     $(".Stat, .Stat10, .Square10, .Square").click(function(e) {
+     $(".Stat, .Stat10, .Square10, .Square20, .Square").click(function(e) {
          var relX = e.pageX - $(this).offset().left;
 
          var maxValue = $(this).text().length;
@@ -99,6 +99,10 @@
              numToSquare(obj, 10);
          });
 
+         $('.Square20').each(function(i, obj) {
+             numToSquare(obj, 20);
+         });
+
          $('.Favorite').each(function(i, obj) {
              numToSquare(obj, 1);
          });
@@ -150,10 +154,16 @@
 
              for (j = 0; j < value; j++) {
                  obj.innerHTML += "■";
+                 if (j==9) {
+                     obj.innerHTML += "<br>";
+                 }
              }
 
              for (j = 0; j < maxvalue - value; j++) {
                  obj.innerHTML += "□";
+                 if (j==9) {
+                     obj.innerHTML += "<br>";
+                 }
              }
          }
      }
