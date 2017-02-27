@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Template</title>
+    <meta name="description" content="Character sheet">
+    <meta name="author" content="velxundussa">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="js/script.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <button id="downloadChar">Save</button>
+    <p>Name: <span class="editable" id="charName">Template</span></p>
+    <table class="mainTable">
+        <tr>
+            <td colspan="3" align="center">
+                <h1>Attributes</h1>
+            </td>
+        </tr>
+        <tr>
+            <th>Physical</th>
+            <th>Social</th>
+            <th>Mental</th>
+        </tr>
+        <tr id="Attributes">
+            <td>
+                <ul>
+                    <li><span class="editable">Strength</span> <span class="Stat">1</span></li>
+                    <li><span class="editable">Dexterity</span> <span class="Stat">1</span></li>
+                    <li><span class="editable">Stamina</span> <span class="Stat">1</span></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><span class="editable">Charisma</span> <span class="Stat">1</span></li>
+                    <li><span class="editable">Manipulation</span> <span class="Stat">1</span></li>
+                    <li><span class="editable">Appearance</span> <span class="Stat">1</span></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><span class="editable">Perception</span> <span class="Stat">1</span></li>
+                    <li><span class="editable">Intelligence</span> <span class="Stat">1</span></li>
+                    <li><span class="editable">Wits</span> <span class="Stat">1</span></li>
+                </ul>
+            </td>
+        </tr>
+        <td colspan="3" align="center">
+            <h1>Abilities</h1>
+        </td>
+        <tr>
+            <th>Talents</th>
+            <th>Skills</th>
+            <th>Knowledges</th>
+        </tr>
+        <tr id="Abilities">
+            <td>
+                <ul>
+                    <li><span class="editable">Alertness</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Athletics</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Brawl</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Empathy</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Expression</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Intimidation</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Leadership</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Primal-Urge</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Streetwise</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Subterfuge</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">__________</span> <span class="Stat">0</span></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><span class="editable">Animal-Ken</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Crafts</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Drive</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Etiquette</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Firearms</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Larceny</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Melee</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Performance</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Stealth</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Survival</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">__________</span> <span class="Stat">0</span></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><span class="editable">Academics</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Computer</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Enigma</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Investigation</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Law</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Medicine</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Occult</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Rituals</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Science</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">Technology</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">__________</span> <span class="Stat">0</span></li>
+                </ul>
+            </td>
+        </tr>
+        <td colspan="3" align="center">
+            <h1>Abilities</h1>
+        </td>
+        <tr>
+            <th>Backgrounds</th>
+            <th>Gifts</th>
+            <th>Gifts</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li><span class="editable">__________</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">__________</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">__________</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">__________</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">__________</span> <span class="Stat">0</span></li>
+                    <li><span class="editable">__________</span> <span class="Stat">0</span></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><span class="editable">___________________</span></li>
+                    <li><span class="editable">___________________</span></li>
+                    <li><span class="editable">___________________</span></li>
+                    <li><span class="editable">___________________</span></li>
+                    <li><span class="editable">___________________</span></li>
+
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><span class="editable">___________________</span></li>
+                    <li><span class="editable">___________________</span></li>
+                    <li><span class="editable">___________________</span></li>
+                    <li><span class="editable">___________________</span></li>
+                    <li><span class="editable">___________________</span></li>
+
+                </ul>
+            </td>
+            <tr/>
+            <tr>
+                <td>
+                    <h4>Renown</h4><br>
+                    <b>Glory</b><br>
+                    <span class="Stat10">0</span><br>
+                    <span class="Square10">0</span>
+                    <b>Honor</b><br>
+                    <span class="Stat10">0</span><br>
+                    <span class="Square10">0</span>
+                    <b>Wisdom</b><br>
+                    <span class="Stat10">0</span><br>
+                    <span class="Square10">0</span>
+
+
+
+                    <td valign="top" align="center">
+                        <h4>Rage</h4>
+                        <span class="Stat10">0</span><br>
+                        <span class="Square10">0</span>
+                        <h4>Gnosis</h4>
+                        <span class="Stat10">0</span><br>
+                        <span class="Square10">0</span>
+                        <h4>Willpower</h4>
+                        <span class="Stat10">0</span><br>
+                        <span class="Square10">0</span>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Bruised -0 <span class="health">0</span></li>
+                            <li>Hurt -1 <span class="health">0</span></li>
+                            <li>Injured -1 <span class="health">0</span></li>
+                            <li>Wounded -2 <span class="health">0</span></li>
+                            <li>Mauled -2 <span class="health">0</span></li>
+                            <li>Crippled -5 <span class="health">0</span></li>
+                            <li>Incapacitated <span class="health">0</span></li>
+                        </ul>
+                    </td>
+            </tr>
+    </table>
+    <pre class="miscData">Enter Side content here</pre>
+
+</html>
