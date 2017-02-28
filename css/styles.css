@@ -4,6 +4,8 @@ table.mainTable {width: 700px; float: left;}
 
 .health {float: right;}
 
+.healthEx {float: right;}
+
 ul {margin: 0; padding: 0; list-style-type: none;}
 
 body {font-size: 100%;}

@@ -79,6 +79,21 @@
          }
      });
 
+     $('.healthEx').click(function(e) {
+         // ■ □
+         if ($(this).text() == "■") {
+             $(this).text("/");
+         } else if ($(this).text() == "/") {
+             $(this).text("X");
+         } else if ($(this).text() == "X") {
+             $(this).text("*");
+         } else if ($(this).text() == "*") {
+             $(this).text("□");
+         } else {
+             $(this).text("■");
+         }
+     });
+
      /**
       * Scans the document and calls proper transformation functions with appropriate max values for each
       */
@@ -108,6 +123,10 @@
          });
 
          $('.health').each(function(i, obj) {
+             numToSquare(obj, 1);
+         });
+
+         $('.healthEx').each(function(i, obj) {
              numToSquare(obj, 1);
          });
      }
@@ -144,7 +163,7 @@
       * @param {} maxvalue - The maximum value of the stat
       */
      function numToSquare(obj, maxvalue) {
-         // ■ □
+         
 
          value = obj.innerHTML;
 
