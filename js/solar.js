@@ -12,7 +12,7 @@ $(document).ready(function() {
         $("#peripheralTotal").text((essence*7) + willpower + virtueSum);
     };
 
-    $(document.body).on("click", "#essence", function(e) {
+    $(document.body).on("click", "#essence, #willpower, .Virtue", function(e) {
         var virtueSum = 0;
         $(".virtueTotal").each(function(i, obj) {
             virtueSum += parseInt($(obj).attr("numValue"));
