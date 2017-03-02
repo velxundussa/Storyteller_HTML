@@ -1,8 +1,6 @@
  $(document).ready(function() {
 
-
      numToChar();
-
 
      $("#downloadChar").click(function(e) {
          downloadCharacter(document.documentElement.innerHTML, $("#charName").text() + ".html");
@@ -163,7 +161,6 @@
       * @param {} maxvalue - The maximum value of the stat
       */
      function numToSquare(obj, maxvalue) {
-         
 
          value = obj.innerHTML;
 
@@ -173,14 +170,14 @@
 
              for (j = 0; j < value; j++) {
                  obj.innerHTML += "■";
-                 if (j==9) {
+                 if (j == 9) {
                      obj.innerHTML += "<br>";
                  }
              }
 
              for (j = 0; j < maxvalue - value; j++) {
                  obj.innerHTML += "□";
-                 if (j==9) {
+                 if (j == 9) {
                      obj.innerHTML += "<br>";
                  }
              }
